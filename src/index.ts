@@ -1,17 +1,19 @@
+import * as PACKAGE from '../package.json'
 import * as events from './events'
 import './mods'
-const PACKAGE = require('../package.json')
+import './mods/preKeyframeFix'
+export {PACKAGE}
 
 BBPlugin.register(PACKAGE.name, {
 	title: PACKAGE.title,
-	author: PACKAGE.author,
+	author: PACKAGE.author.name,
 	description: PACKAGE.description,
-	icon: 'create_session',
-	variant: 'desktop',
+	icon: 'personal_injury',
+	variant: 'both',
 	// @ts-ignore // Blockbench types are outdated >:I
 	version: PACKAGE.version,
 	min_version: PACKAGE.min_blockbench_version,
-	tags: ['Tag 1', 'Tag 2', 'Tag 3'],
+	tags: ['Blockbench', 'is outdated', 'and broken'],
 	onload() {
 		devlog(`${PACKAGE.name} loaded!`)
 		events.load.trigger()

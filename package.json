@@ -1,6 +1,6 @@
 {
-	"name": "blockbench_plugin_template",
-	"title": "BlockBench Plugin Template",
+	"name": "better_blockbench",
+	"title": "Better Blockbench",
 	"version": "1.0.0",
 	"min_blockbench_version": "4.2.0",
 	"author": {
@@ -10,9 +10,9 @@
 	},
 	"repository": {
 		"type": "github",
-		"url": "https://github.com/SnaveSutit/blockbench-plugin-template"
+		"url": "https://github.com/SnaveSutit/better-blockbench-blockbench-plugin"
 	},
-	"description": "A simple Blockbench plugin template",
+	"description": "Fixes things that should be fixed in vanilla Blockbench.",
 	"main": "./dist/index.js",
 	"types": "./dist/src/index.d.ts",
 	"private": true,
